@@ -1,13 +1,14 @@
 def fizzbuzz(limit):
   # Write your code here
+  retArr=[]
   for i in range(1,limit+1):
    if i%15==0:
-    print("fizzbuzz")
+    retArr.append("FizzBuzz")
    elif i%3==0:
-    print("buzz")
+    retArr.append("Fizz")
    elif i%5==0:
-    print("fizz")
+    retArr.append("Buzz")
    else:
-    print(i)
-   
+    retArr.append(i)
+  return retArr
 print(fizzbuzz(16))
